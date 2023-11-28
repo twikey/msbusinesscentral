@@ -1,0 +1,37 @@
+{
+  "id": "3fc64f19-d252-4ae2-b9be-5df8e63a4cb9",
+  "name": "Twikey",
+  "publisher": "Twikey",
+  "brief": "Get started in no time with your accounting in the cloud - for SME’s from Belgium ",
+  "description": "Twikey is a ready-to-use cloud solution to get started with your accounting in the cloud. This app is tailored for SME's from Belgium with the local Belgian legislation and accounting standards.",
+  "version": "18.4.4.0",
+  "privacyStatement": "https://www.twikey.com/privacy.html",
+  "EULA": "https://www.twikey.com/",
+  "help": "https://www.twikey.com/support?l=en",
+  "url": "https://www.twikey.com/",
+  "logo": "./Logo/Logo.png",
+  "application": "19.0.0.0",
+  "dependencies": [
+    
+  ],
+  "screenshots": [],
+  "platform": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 71016575,
+      "to": 71017574
+    }
+  ],
+  "features": [
+    "TranslationFile"
+  ],
+  "resourceExposurePolicy": {"allowDebugging": false, "allowDownloadingSource": false, "includeSourceInSymbolFile": false},
+  "runtime": "8.0",
+  "applicationInsightsConnectionString": "InstrumentationKey=a96ae05d-d4fb-4c54-af3a-22ee04c30bc9;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/",
+  "contextSensitiveHelpUrl": "https://www.twikey.com/",
+  "supportedLocales": [
+    "nl-BE",
+    "fr-BE",
+    "en-US"
+  ]
+}

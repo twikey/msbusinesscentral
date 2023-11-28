@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "launch",
+            "server": "http://launch",
+            "serverInstance": "BC",
+            "tenant": "default",
+            "authentication": "UserPassword",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+}

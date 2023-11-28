@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="cs-CZ" original="Twikey">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 108801889 - Field 448862064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Border</source><target>Hranice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Border - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 2581161485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ECC Level</source><target>Úroveň ECC</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field ECCLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 2581161485 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Low (L),Medium-Low (M),Medium-High (Q),High (H)</source><target>Nízká (L), středně nízká (M), středně vysoká (Q), vysoká (H)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field ECCLevel - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 3581037481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Height</source><target>Výška</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Height - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 3122986371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Text</source><target>Zahrnout text</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field IncludeText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 1594621544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture</source><target>Obrázek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Picture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 1150440080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture Type</source><target>Typ obrázku</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field PictureType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source><target>Primární klíč</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 789959666 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Colors</source><target>Reverzní barvy</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field ReverseColors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 3964473375 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Size</source><target>Velikost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Size - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source><target>Typ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a Type,Code 39,Code 128a,Code 128b,Code 128c,2 of 5 Interleaved,QR Code</source><target>Vyberte Typ,Kód 39,Kód 128a,Kód 128b,Kód 128c,2 z 5 Prokládaný,QR kód</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source><target>Hodnota</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 108801889 - Field 613790498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Width</source><target>Šířka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.Barcode - Field Width - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry Twikey Registration</source><target>Registrace položky zákazníka Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 1507120289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry Document No.</source><target>Číslo dokladu pro zadání knihy odběratele</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Cust. Ledger Entry Doc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 1582530403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry No.</source><target>Číslo položky zákazníka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Cust. Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source><target>Číslo položky</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 2641924796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Payment URL</source><target>Adresa URL platby faktury</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Invoice Payment URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 2452959191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Status</source><target>Stav faktury</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Invoice Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1980309087 - Field 1157550427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Invoice Id</source><target>Id faktury Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.CLETwikeyRegistration - Field Twikey Invoice Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 467812692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accept</source><target>Přijmout</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field Accept - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 3926698677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blob</source><target>Objekt BLOB</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field Blob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 2575460289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Password</source><target>Heslo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field Password - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrimaryKey</source><target>PrimárníKlíč</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source><target>Adresa URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 47957142 - Field 3549826426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UserName</source><target>Název uživatele</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.RESTWebServiceArg - Field UserName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4154990448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Contract Template</source><target>Šablona smlouvy Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContractTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4154990448 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source><target>Popis</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContractTemplate - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4154990448 - Field 1382944743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Mail on Invite</source><target>Odeslat poštu na pozvané</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContractTemplate - Field Send Mail on Invite - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2450849996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Contract Template Field</source><target>Pole šablony smlouvy Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContrTemplField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2450849996 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source><target>Název pole</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContrTemplField - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2450849996 - Field 1461151337 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory</source><target>Povinné</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyContrTemplField - Field Mandatory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Document</source><target>Twikey dokument</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Field 1157332158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel Reason</source><target>Zrušit důvod</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Cancel Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Field 4274503382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contract Template</source><target>Šablona smlouvy</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Contract Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source><target>Číslo zákazníka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Field 2326231102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Id</source><target>Id dokladu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Document Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4091800859 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source><target>Stav</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1577736773 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Document Field</source><target>Pole dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocumentField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1577736773 - Field 4274503382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contract Template</source><target>Šablona smlouvy</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocumentField - Field Contract Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1577736773 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source><target>Číslo zákazníka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocumentField - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1577736773 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source><target>Název pole</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocumentField - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1577736773 - Field 958223187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Value</source><target>Hodnota pole</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocumentField - Field Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Log Entry</source><target>Záznam protokolu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Are you sure that you want to delete the log entries?</source><target>Jste si jisti, že chcete odstranit položky protokolu?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 2491730758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date and Time</source><target>Datum a čas</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Date and Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source><target>Číslo položky</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 4132733409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Method</source><target>Metoda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 3351914939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request</source><target>Požadavek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Request - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 2278520725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Response</source><target>Odezva</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Response - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 2379948459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Code</source><target>Kód stavu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Status Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 2647579790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Description</source><target>Popis stavu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Status Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 1230148255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time</source><target>Čas</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>URL</source><target>Adresa URL</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3611350946 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source><target>ID uživatele</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyLogEntry - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Registration</source><target>Registrace Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source><target>Číslo položky</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Field 2641924796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Payment URL</source><target>Adresa URL platby faktury</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Invoice Payment URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Field 2452959191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Status</source><target>Stav faktury</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Invoice Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Field 1094616889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Invoice No.</source><target>Zaúčtovaná prodejní faktura č.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Posted Sales Invoice No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1243684569 - Field 1157550427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Invoice Id</source><target>Id faktury Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Twikey Invoice Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Setup</source><target>Nastavení Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Field 4253087169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source><target>Kód rozhraní API</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field API Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Field 2377467855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable Log</source><target>Povolit protokol</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field Enable Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Field 3734307494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable Twikey Integration</source><target>Povolit integraci Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field Enable Twikey Integration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Field 4139421402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Environment URL</source><target>Adresa URL prostředí</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field Environment URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2666609899 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source><target>Primární klíč</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - NamedType 2128880793" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey has not been set up correctly</source><target>Twikey nebyl správně nastaven</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - NamedType TwikeySetupErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2199338384 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The contract has been cancelled via Twikey!</source><target>Smlouva byla zrušena přes Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method CancelContract - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2199338384 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to send this cancellation to Twikey?</source><target>Určitě chcete toto zrušení odeslat společnosti Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method CancelContract - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2199338384 - NamedType 338184951" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The contract has not been cancelled via Twikey, please cancel it manually via Twikey.</source><target>Smlouva nebyla zrušena prostřednictvím Twikey, zrušte ji ručně prostřednictvím Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method CancelContract - NamedType Label3</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 1295257704 - NamedType 2933283993" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Contract Templates have not been set up correctly</source><target>Šablony smluv Twikey nebyly správně nastaveny</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method GetContractTemplate - NamedType ContractTemplateErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 1295257704 - NamedType 2473511087" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You have to select a contract template</source><target>Musíte vybrat šablonu smlouvy</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method GetContractTemplate - NamedType ContractTemplateSelErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 446519735 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 byl vyzván k podpisu smlouvy prostřednictvím Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomer - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 446519735 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3</source><target>Název pole %1 nebyl nastaven pro číslo zákazníka %2 a ID šablony smlouvy %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomer - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 3169489474 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The customer has been invited to sign the contract via Twikey!</source><target>Zákazník byl vyzván k podpisu smlouvy prostřednictvím Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomers - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 3169489474 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3</source><target>Název pole %1 nebyl nastaven pro číslo zákazníka %2 a ID šablony smlouvy %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomers - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 3169489474 - NamedType 338184951" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The selected customers have been invited to sign the contract via Twikey!</source><target>Vybraní zákazníci byli vyzváni k podpisu smlouvy prostřednictvím Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomers - NamedType Label3</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2273981139 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 byl vyzván k podpisu smlouvy prostřednictvím Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method ReactivateDocument - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2273981139 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3</source><target>Název pole %1 nebyl nastaven pro číslo zákazníka %2 a ID šablony smlouvy %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method ReactivateDocument - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 3109048480 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to send these documents to Twikey?</source><target>Chcete tyto dokumenty poslat Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendCustLedgerEntriesToTwikey - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 3109048480 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The documents have been succesfully sent to Twikey.</source><target>Dokumenty byly úspěšně odeslány Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendCustLedgerEntriesToTwikey - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2836789011 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sales invoices have been succesfully sent to Twikey.</source><target>Prodejní faktury byly úspěšně odeslány společnosti Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedSalesInvoicesToTwikey - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2711058470 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to send this invoice to Twikey?</source><target>Chcete tuto fakturu odeslat společnosti Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedSalesInvoiceToTwikey - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2711058470 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice %1 has succesfully been sent to Twikey.</source><target>Faktura %1 byla úspěšně odeslána společnosti Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedSalesInvoiceToTwikey - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 4258112487 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 byl vyzván k podpisu smlouvy prostřednictvím Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SuspendDocument - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 4258112487 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3</source><target>Název pole %1 nebyl nastaven pro číslo zákazníka %2 a ID šablony smlouvy %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SuspendDocument - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Page 2066701543 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QR Code List</source><target>Seznam QR kódů</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodeList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3262628320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QR Code Card</source><target>Karta QR kódu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodePage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3262628320 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source><target>Obecné</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodePage - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3262628320 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source><target>Možnosti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodePage - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3262628320 - Action 1719252577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Image</source><target>Generovat obrázek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodePage - Action GenerateBarcode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 753682245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Image</source><target>Obraz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.BarcodePicture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1789890240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry Twikey Registrations</source><target>Registrace položky zákazníka Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.CLETwikeyRegAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3493356490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry Twikey Registrations</source><target>Registrace položky zákazníka Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.CLETwikeyRegistrations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 957837022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Contract Templates</source><target>Šablony smluv Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.ContractTemplates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 957837022 - Action 183296051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Additional Fields</source><target>Další pole</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.ContractTemplates - Action Fields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4275153114 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Contract Template Fields</source><target>Pole šablon smlouvy Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.ContrTemplFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 329662908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Document Fields</source><target>Pole dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocumentFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236331142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Documents</source><target>Dokumenty Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocuments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236331142 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel</source><target>Storno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocuments - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236331142 - Action 3605406306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reactivate</source><target>Reaktivovat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocuments - Action Reactivate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236331142 - Action 2320133870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suspend</source><target>Přerušit</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocuments - Action Suspend - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1182292278 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Documents</source><target>Dokumenty Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocumentsAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1182292278 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel</source><target>Storno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocumentsAPI - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1182292278 - Action 3605406306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reactivate</source><target>Reaktivovat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocumentsAPI - Action Reactivate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1182292278 - Action 2320133870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suspend</source><target>Přerušit</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyDocumentsAPI - Action Suspend - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New,Process,Report,Log Entries</source><target>Nový,Proces,Sestava,Položky protokolu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Property PromotedActionCategories</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Log Entries</source><target>Položky protokolu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Action 2526477354 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear the list of all log entries.</source><target>Vymazat seznam všech položek protokolu.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete0days - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Action 2526477354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete All Entries</source><target>Smazat všechny položky</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete0days - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Action 377844979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear the list of log entries that are older than 7 days.</source><target>Vymazat seznam položek protokolu, které jsou starší než 7 dní.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete7days - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1973775548 - Action 377844979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Entries Older Than 7 Days</source><target>Smazat položky starší než 7 dní</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete7days - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3611350946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Log Entry</source><target>Záznam protokolu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3611350946 - NamedType 2640682137" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request</source><target>Požadavek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - NamedType RequestLabel</note>
+        </trans-unit>
+        <trans-unit id="Page 3611350946 - NamedType 825013599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Response</source><target>Odezva</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - NamedType ResponseLabel</note>
+        </trans-unit>
+        <trans-unit id="Page 3611350946 - Control 3208954024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request</source><target>Požadavek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - Control RequestText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3611350946 - Control 1820458482 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Response</source><target>Odezva</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - Control ResponseText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2206473552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Registrations</source><target>Registrace Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyRegistrations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2812164912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Registrations</source><target>Registrace Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyRegistrationsAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Setup</source><target>Nastavení Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source><target>Obecné</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 3693644651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contract Templates</source><target>Šablony smluv</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action ContractTemplates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 2316947810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Entries</source><target>Položky protokolu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action LogEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 1573863285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Change Environment</source><target>Změna prostředí</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action ChangeEnvironment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 3894687207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Beta Environment</source><target>Beta prostředí</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action SetBetaEnvironment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 3830648864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production Environment</source><target>Produkční prostředí</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action SetProductionEnvironment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2666609899 - Action 2421935703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Status</source><target>Stav aktualizace</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action UpdateStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1206817445 - Action 2683919842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Invite Customer via Twikey</source><target>Pozvěte zákazníka přes Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerCard - Action SCA.TWI.InviteCustomer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1206817445 - Action 329662908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Twikey Document Fields</source><target>Pole dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerCard - Action SCA.TWI.TwikeyDocumentFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1206817445 - Action 4236331142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Twikey Documents</source><target>Dokumenty Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerCard - Action SCA.TWI.TwikeyDocuments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 537322452 - Action 2221657339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+          <source>Send to Twikey</source><target>Odeslat na Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerLedgerEntries - Action SCA.TWI.SendToTwikey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2322629807 - Action 2683919842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Invite Selected Customers via Twikey</source><target>Pozvěte vybrané zákazníky přes Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerList - Action SCA.TWI.InviteCustomer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2322629807 - Action 329662908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Twikey Document Fields</source><target>Pole dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerList - Action SCA.TWI.TwikeyDocumentFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2322629807 - Action 4236331142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Twikey Documents</source><target>Dokumenty Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.CustomerList - Action SCA.TWI.TwikeyDocuments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2031543085 - Action 2221657339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Send to Twikey</source><target>Odeslat na Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedSalesInvoice - Action SCA.TWI.SendToTwikey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 662147876 - Action 1862262051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Send Selection to Twikey</source><target>Odeslat výběr do Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedSalesInvoices - Action SCA.TWI.SendSelectionToTwikey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 662147876 - Action 1862262051 - Method 1377591017 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 662147876">
+          <source>Do you want to send the selected sales invoices to Twikey?</source><target>Chcete poslat vybrané prodejní faktury Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedSalesInvoices - Action SCA.TWI.SendSelectionToTwikey - Method OnAction - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4104933725 - Field 145278149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2733917450">
+          <source>Twikey Invoice Status</source><target>Stav faktury Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.CustLedgerEntry - Field SCA.TWI.TwikeyInvoiceStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4266317225 - Field 700312659 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Twikey Document Id</source><target>ID dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.Customer - Field SCA.TWI.DocumentId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4266317225 - Field 4192066120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Twikey Enabled</source><target>Povoleno Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.Customer - Field SCA.TWI.SendingProfile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4266317225 - Field 4192066120 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Always,Optional,Disable</source><target>Vždy,Volitelné,Zakázat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.Customer - Field SCA.TWI.SendingProfile - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4266317225 - Field 623261521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Twikey Document Status</source><target>Stav dokumentu Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.Customer - Field SCA.TWI.Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2130014080 - Field 4154990448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Twikey Alt. Contract Template</source><target>Šablona smlouvy Twikey Alt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.SalesHeader - Field SCA.TWI.TwikeyContractTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1229858455 - Field 4154990448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Twikey Alt. Contract Template</source><target>Šablona smlouvy Twikey Alt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.SalesInvoiceHeader - Field SCA.TWI.TwikeyContractTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1229858455 - Field 145278149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Twikey Invoice Status</source><target>Stav faktury Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.SalesInvoiceHeader - Field SCA.TWI.TwikeyInvoiceStatus - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
