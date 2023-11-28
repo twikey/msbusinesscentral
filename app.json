@@ -9,7 +9,6 @@
   "EULA": "https://www.twikey.com/",
   "help": "https://www.twikey.com/support?l=en",
   "url": "https://www.twikey.com/",
-  "logo": "./Logo/Logo.png",
   "application": "19.0.0.0",
   "dependencies": [
     
