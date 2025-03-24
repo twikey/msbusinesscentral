@@ -828,6 +828,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedSalesInvoices - Action SCA.TWI.SendSelectionToTwikey - Method OnAction - NamedType Label1</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3122156647 - Action 1862262051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 540259714">
+          <source>Send Selection to Twikey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedServiceInvoices - Action SCA.TWI.SendSelectionToTwikey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3122156647 - Action 1862262051 - Method 1377591017 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3122156647">
+          <source>Do you want to send the selected service invoices to Twikey?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SCA.TWI.PostedServiceInvoices - Action SCA.TWI.SendSelectionToTwikey - Method OnAction - NamedType Label1</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4104933725 - Field 145278149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2733917450">
           <source>Twikey Invoice Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
