@@ -14,7 +14,7 @@ tableextension 71016580 "SCA.TWI.ServiceInvoiceHeader" extends "Service Invoice 
             Caption = 'Twikey Invoice Status';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup("SCA.TWI.TwikeyRegistration"."Invoice Status" where("Posted Sales Invoice No." = field("No.")));
+            CalcFormula = lookup("SCA.TWI.TwikeyServiceRegistr"."Invoice Status" where("Posted Service Invoice No." = field("No.")));
 
         }
     }
