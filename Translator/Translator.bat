@@ -1,0 +1,1 @@
+Scapta.BC.Translator.Client.exe -Source "..\Translations\Twikey.g.xlf" -Custom Custom.json

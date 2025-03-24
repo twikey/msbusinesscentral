@@ -1,10 +1,10 @@
-page 71016578 "SCA.TWI.TwikeyRegistrations"
+page 71016590 "SCA.TWI.TwikeyServiceRegistr"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "SCA.TWI.TwikeyRegistration";
-    Caption = 'Twikey Sales Registrations';
+    SourceTable = "SCA.TWI.TwikeyServiceRegistr";
+    Caption = 'Twikey Service Registrations';
     Editable = false;
 
     layout
@@ -17,7 +17,7 @@ page 71016578 "SCA.TWI.TwikeyRegistrations"
                 {
                     ApplicationArea = All;
                 }
-                field("Posted Sales Invoice No."; Rec."Posted Sales Invoice No.")
+                field("Posted Service Invoice No."; Rec."Posted Service Invoice No.")
                 {
                     ApplicationArea = All;
                 }

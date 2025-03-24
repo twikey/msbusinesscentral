@@ -1,13 +1,13 @@
-page 71016588 "SCA.TWI.TwikeyRegistrationsAPI"
+page 71016591 "SCA.TWI.TwikeyServRegistrAPI"
 {
     PageType = API;
-    EntityName = 'twikeyRegistration';
-    EntitySetName = 'twikeyRegistrations';
+    EntityName = 'twikeyServiceRegistration';
+    EntitySetName = 'twikeyServiceRegistrations';
     APIGroup = 'twikey';
     APIPublisher = 'twikey';
     APIVersion = 'v1.0';
-    SourceTable = "SCA.TWI.TwikeyRegistration";
-    Caption = 'Twikey Sales Registrations';
+    SourceTable = "SCA.TWI.TwikeyServiceRegistr";
+    Caption = 'Twikey Service Registrations';
     Editable = false;
 
     layout
@@ -20,7 +20,7 @@ page 71016588 "SCA.TWI.TwikeyRegistrationsAPI"
                 {
                     ApplicationArea = All;
                 }
-                field(postedSalesInvoiceNo; Rec."Posted Sales Invoice No.")
+                field(postedServiceInvoiceNo; Rec."Posted Service Invoice No.")
                 {
                     ApplicationArea = All;
                 }

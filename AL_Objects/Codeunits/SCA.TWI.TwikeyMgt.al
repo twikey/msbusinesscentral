@@ -741,7 +741,10 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
 
         InvoiceObj.Add('number', SalesInvoiceHeader."No.");
         InvoiceObj.Add('title', SalesInvoiceHeader."Your Reference");
-        InvoiceObj.Add('remittance', SalesInvoiceHeader."Your Reference");
+        if SalesInvoiceHeader."Payment Reference" <> '' then
+            InvoiceObj.Add('remittance', SalesInvoiceHeader."Payment Reference")
+        else
+            InvoiceObj.Add('remittance', SalesInvoiceHeader."Your Reference");
         if SalesInvoiceHeader."SCA.TWI.TwikeyContractTemplate" <> 0 then begin
             InvoiceObj.Add('ct', SalesInvoiceHeader."SCA.TWI.TwikeyContractTemplate");
         end;
@@ -855,7 +858,10 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
 
         InvoiceObj.Add('number', CustLedgerEntry."Document No.");
         InvoiceObj.Add('title', CustLedgerEntry."Document No.");
-        InvoiceObj.Add('remittance', CustLedgerEntry."Document No.");
+        if CustLedgerEntry."Payment Reference" <> '' then
+            InvoiceObj.Add('remittance', CustLedgerEntry."payment reference")
+        else
+            InvoiceObj.Add('remittance', CustLedgerEntry."Document No.");
         // if SalesInvoiceHeader."SCA.TWI.TwikeyContractTemplate" <> 0 then begin
         //     InvoiceObj.Add('ct', SalesInvoiceHeader."SCA.TWI.TwikeyContractTemplate");
         // end;
@@ -920,6 +926,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         NoOfRecs: Integer;
         CurrRec: Integer;
         TwikeyLink: Record "SCA.TWI.TwikeyRegistration";
+        TwikeyServiceLink: Record "SCA.TWI.TwikeyServiceRegistr";
         CLETwikeyRegistration: Record "SCA.TWI.CLETwikeyRegistration";
         EntryNo: Integer;
     begin
@@ -944,11 +951,19 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
                                 TwikeyLink.Modify();
                             end;
                         end else begin
-                            CLETwikeyRegistration.SetRange("Twikey Invoice Id", JValue.AsText());
-                            if CLETwikeyRegistration.FindFirst() then begin
+                            TwikeyServiceLink.SetRange("Twikey Invoice Id", JValue.AsText());
+                            if TwikeyServiceLink.FindFirst() then begin
                                 if JHelper.GetJsonValue(JItem.AsObject(), JValue, 'state') then begin
-                                    CLETwikeyRegistration."Invoice Status" := JValue.AsText();
-                                    CLETwikeyRegistration.Modify();
+                                    TwikeyServiceLink."Invoice Status" := JValue.AsText();
+                                    TwikeyServiceLink.Modify();
+                                end;
+                            end else begin
+                                CLETwikeyRegistration.SetRange("Twikey Invoice Id", JValue.AsText());
+                                if CLETwikeyRegistration.FindFirst() then begin
+                                    if JHelper.GetJsonValue(JItem.AsObject(), JValue, 'state') then begin
+                                        CLETwikeyRegistration."Invoice Status" := JValue.AsText();
+                                        CLETwikeyRegistration.Modify();
+                                    end;
                                 end;
                             end;
                         end;
@@ -1140,6 +1155,16 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             end;
         end;
     end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Service Invoice Header", 'OnBeforeSendProfile', '', false, false)]
+    local procedure SendServiceInvoiceToTwikey(var ServiceInvoiceHeader: Record "Service Invoice Header")
+    var
+    begin
+        if IsTwikeyEnabled() then begin
+            SendPostedServiceInvoiceToTwikey(ServiceInvoiceHeader, false);
+        end;
+    end;
+
 
     procedure SendPostedSalesInvoiceToTwikey(SalesInvHeader: Record "Sales Invoice Header"; ShowNotification: Boolean)
     var
@@ -1443,6 +1468,180 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
                 Response.Content.ReadAs(ResponseContent);
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, '', Response, '');
+        end;
+    end;
+
+    procedure SendPostedServiceInvoiceToTwikey(ServiceInvHeader: Record "Service Invoice Header"; ShowNotification: Boolean)
+    var
+        Customer: Record Customer;
+        Label1: Label 'Do you want to send this invoice to Twikey?';
+        Label2: Label 'Invoice %1 has succesfully been sent to Twikey.';
+    begin
+        Customer.Get(ServiceInvHeader."Bill-to Customer No.");
+        case Customer."SCA.TWI.SendingProfile" of
+            Customer."SCA.TWI.SendingProfile"::Disable:
+                begin
+                    exit;
+                end;
+            Customer."SCA.TWI.SendingProfile"::Always:
+                begin
+                    CreateServiceInvoice(ServiceInvHeader);
+                    Commit();
+                end;
+            Customer."SCA.TWI.SendingProfile"::Optional:
+                begin
+                    if Confirm(Label1) then begin
+                        CreateServiceInvoice(ServiceInvHeader);
+                        Commit();
+                    end;
+                end;
+        end;
+        if ShowNotification then begin
+            Message(Strsubstno(Label2, ServiceInvHeader."No."));
+        end;
+    end;
+
+    procedure CreateServiceInvoice(ServiceInvoiceHeader: Record "Service Invoice Header")
+    var
+        JsonMgt: Codeunit "JSON Management";
+        JResponse: JsonToken;
+        JRequest: JsonToken;
+        JArray: JsonArray;
+        JItem: JsonToken;
+        JValue: JsonValue;
+        NoOfRecs: Integer;
+        CurrRec: Integer;
+        TwikeyServiceLink: Record "SCA.TWI.TwikeyServiceRegistr";
+        EntryNo: Integer;
+    begin
+        if IsTwikeyEnabled() then begin
+            if GuiAllowed then begin
+                Window.Open('Processing data... @1@@@@@@@@@@');
+            end;
+
+            BuildCreateServiceInvoiceRequest(JRequest, ServiceInvoiceHeader);
+            if BasicAuthKey = '' then begin
+                GetBasicAuthKey();
+            end;
+
+            WebRequestMgt.SetBasicAuthkey(BasicAuthKey);
+            JResponse := WebRequestMgt.ExecuteWebRequest(GetBaseURL() + 'creditor/invoice', 'POST', JRequest);
+
+            TwikeyServiceLink.SetRange("Posted Service Invoice No.", ServiceInvoiceHeader."No.");
+            if TwikeyServiceLink.FindFirst() then begin
+                if JHelper.GetJsonValue(JResponse, JValue, 'id') then begin
+                    TwikeyServiceLink."Twikey Invoice Id" := JValue.AsText();
+                end;
+                if JHelper.GetJsonValue(JResponse, JValue, 'state') then begin
+                    TwikeyServiceLink."Invoice Status" := JValue.AsText();
+                end;
+                if JHelper.GetJsonValue(JResponse, JValue, 'url') then begin
+                    TwikeyServiceLink."Invoice Payment URL" := JValue.AsText();
+                end;
+                TwikeyServiceLink.Modify();
+            end else begin
+                TwikeyServiceLink.Reset();
+                if TwikeyServiceLink.FindLast() then begin
+                    EntryNo := TwikeyServiceLink."Entry No.";
+                end;
+                EntryNo += 1;
+                TwikeyServiceLink.Init();
+                TwikeyServiceLink."Entry No." := EntryNo;
+                TwikeyServiceLink."Posted Service Invoice No." := ServiceInvoiceHeader."No.";
+                if JHelper.GetJsonValue(JResponse, JValue, 'id') then begin
+                    TwikeyServiceLink."Twikey Invoice Id" := JValue.AsText();
+                end;
+                if JHelper.GetJsonValue(JResponse, JValue, 'state') then begin
+                    TwikeyServiceLink."Invoice Status" := JValue.AsText();
+                end;
+                if JHelper.GetJsonValue(JResponse, JValue, 'url') then begin
+                    TwikeyServiceLink."Invoice Payment URL" := JValue.AsText();
+                end;
+                TwikeyServiceLink.Insert();
+            end;
+            if GuiAllowed then begin
+                Window.Close();
+            end;
+        end;
+    end;
+
+    local procedure BuildCreateServiceInvoiceRequest(var JRequest: JsonToken; ServiceInvoiceHeader: Record "Service Invoice Header")
+    var
+        InvoiceObj: JsonObject;
+        CustObj: JsonObject;
+        Customer: Record Customer;
+        VatRegistrationNo: Text;
+    begin
+        if not Customer.Get(ServiceInvoiceHeader."Bill-to Customer No.") then
+            Customer.Init();
+        ServiceInvoiceHeader.CalcFields("Amount Including VAT");
+
+        InvoiceObj.Add('number', ServiceInvoiceHeader."No.");
+        InvoiceObj.Add('title', ServiceInvoiceHeader."Your Reference");
+        if ServiceInvoiceHeader."Payment Reference" <> '' then
+            InvoiceObj.Add('remittance', ServiceInvoiceHeader."Payment Reference")
+        else
+            InvoiceObj.Add('remittance', ServiceInvoiceHeader."Your Reference");
+        if ServiceInvoiceHeader."SCA.TWI.TwikeyContractTemplate" <> 0 then begin
+            InvoiceObj.Add('ct', ServiceInvoiceHeader."SCA.TWI.TwikeyContractTemplate");
+        end;
+        InvoiceObj.Add('amount', format(ServiceInvoiceHeader."Amount Including VAT", 0, 9));
+        InvoiceObj.Add('date', ServiceInvoiceHeader."Posting Date");
+        InvoiceObj.Add('duedate', ServiceInvoiceHeader."Due Date");
+        InvoiceObj.Add('locale', ServiceInvoiceHeader."Language Code");
+
+        CustObj.Add('customerNumber', Customer."No.");
+        CustObj.Add('email', Customer."E-Mail");
+        CustObj.Add('companyName', Customer.Name);
+        if Customer.Contact <> '' then begin
+            CustObj.Add('firstname', Customer.Contact);
+        end else begin
+            CustObj.Add('firstname', Customer.Name);
+        end;
+        CustObj.Add('lastname', '-');
+        CustObj.Add('mobile', Customer."Mobile Phone No.");
+        CustObj.Add('address', Customer.Address);
+        CustObj.Add('zip', Customer."Post Code");
+        CustObj.Add('city', Customer.City);
+        CustObj.Add('country', Customer."Country/Region Code");
+        CustObj.Add('l', Customer."Language Code");
+        VatRegistrationNo := GetCustomerVatRegistrationNo(Customer);
+        if VatRegistrationNo <> '' then begin
+            CustObj.Add('vatno', VatRegistrationNo);
+        end;
+
+
+        InvoiceObj.Add('customer', CustObj.AsToken());
+
+        //InvoiceObj.Add('pdf', '');
+
+        JRequest := InvoiceObj.AsToken();
+    end;
+
+    procedure SendPostedServiceInvoicesToTwikey(var ServiceInvHeader: Record "Service Invoice Header"; ShowNotification: Boolean)
+    var
+        Customer: Record Customer;
+        Label2: Label 'The service invoices have been succesfully sent to Twikey.';
+    begin
+        if ServiceInvHeader.FindSet() then begin
+            repeat
+                Customer.Get(ServiceInvHeader."Bill-to Customer No.");
+                case Customer."SCA.TWI.SendingProfile" of
+                    Customer."SCA.TWI.SendingProfile"::Always:
+                        begin
+                            CreateServiceInvoice(ServiceInvHeader);
+                            Commit();
+                        end;
+                    Customer."SCA.TWI.SendingProfile"::Optional:
+                        begin
+                            CreateServiceInvoice(ServiceInvHeader);
+                            Commit();
+                        end;
+                end;
+            until ServiceInvHeader.Next() = 0;
+        end;
+        if ShowNotification then begin
+            Message(Label2);
         end;
     end;
 

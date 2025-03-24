@@ -204,7 +204,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Customer No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4091800859 - Field 2326231102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Id</source><target>Идентификатор документа</target>
+          <source>Document Id</source><target>ИД документа</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyDocument - Field Document Id - Property Caption</note>
         </trans-unit>
@@ -328,6 +328,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyRegistration - Field Twikey Invoice Id - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2376476057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Service Registration</source><target>Регистрация в сервисе Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2376476057 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source><target>№ операции</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2376476057 - Field 2641924796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Payment URL</source><target>URL-адрес оплаты счета</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Field Invoice Payment URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2376476057 - Field 2452959191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Status</source><target>Статус счета-фактуры</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Field Invoice Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2376476057 - Field 1635153558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Service Invoice No.</source><target>Проведенный сервисный счет No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Field Posted Service Invoice No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2376476057 - Field 1157550427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Invoice Id</source><target>Идентификатор счета-фактуры Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeyServiceRegistr - Field Twikey Invoice Id - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2666609899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Twikey Setup</source><target>Настройка твикея</target>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -358,6 +388,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table SCA.TWI.TwikeySetup - Field Primary Key - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 574812255 - Method 2331973957 - NamedType 993997389" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No implementation for fieldtype: "%1".</source><target>Нет реализации для fieldtype: "%1".</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.JsonHelper - Method GetValueIntoField - NamedType NotImplemented</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 574812255 - Method 3754832518 - NamedType 993997389" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No implementation for fieldtype: "%1".</source><target>Нет реализации для fieldtype: "%1".</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.JsonHelper - Method GetValueIntoFieldWithValidation - NamedType NotImplemented</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1793454468 - NamedType 2128880793" size-unit="char" translate="yes" xml:space="preserve">
           <source>Twikey has not been set up correctly</source><target>Twikey настроен неправильно</target>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -387,6 +427,16 @@
           <source>You have to select a contract template</source><target>Вы должны выбрать шаблон контракта</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method GetContractTemplate - NamedType ContractTemplateSelErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 446519735 - NamedType 2667602313" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 был приглашен подписать контракт через Twikey!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomer - NamedType Label10</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 446519735 - NamedType 3459614776" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3</source><target>Имя поля %1 не задано для клиента No %2 и идентификатора шаблона контракта %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method InviteCustomer - NamedType Label20</note>
         </trans-unit>
         <trans-unit id="Codeunit 1793454468 - Method 446519735 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 был приглашен подписать контракт через Twikey!</target>
@@ -433,6 +483,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendCustLedgerEntriesToTwikey - NamedType Label2</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2493331554 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to send these documents to Twikey?</source><target>Вы хотите отправить эти документы в Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendCustLedgerEntriesToTwikeyConfirm - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2493331554 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The documents have been succesfully sent to Twikey.</source><target>Документы были успешно отправлены в Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendCustLedgerEntriesToTwikeyConfirm - NamedType Label2</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1793454468 - Method 2836789011 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
           <source>The sales invoices have been succesfully sent to Twikey.</source><target>Счета-фактуры были успешно отправлены twikey.</target>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -447,6 +507,21 @@
           <source>Invoice %1 has succesfully been sent to Twikey.</source><target>Счет %1 успешно отправлен в Twikey.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedSalesInvoiceToTwikey - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2573598312 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The service invoices have been succesfully sent to Twikey.</source><target>Счета за услуги были успешно отправлены в Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedServiceInvoicesToTwikey - NamedType Label2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2414617329 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to send this invoice to Twikey?</source><target>Вы хотите отправить этот счет в Twikey?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedServiceInvoiceToTwikey - NamedType Label1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1793454468 - Method 2414617329 - NamedType 975881568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice %1 has succesfully been sent to Twikey.</source><target>Счет %1 успешно отправлен в Twikey.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SCA.TWI.TwikeyMgt - Method SendPostedServiceInvoiceToTwikey - NamedType Label2</note>
         </trans-unit>
         <trans-unit id="Codeunit 1793454468 - Method 4258112487 - NamedType 1613578185" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 has been invited to sign the contract via Twikey!</source><target>%1 был приглашен подписать контракт через Twikey!</target>
@@ -584,7 +659,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete7days - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1973775548 - Action 377844979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Delete Entries Older Than 7 Days</source><target>Удалить записи старше 7 дней</target>
+          <source>Delete Entries Older Than 7 Days</source><target>Удалить операции старше 7 дней</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntries - Action Delete7days - Property Caption</note>
         </trans-unit>
@@ -613,15 +688,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - Control ResponseText - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3611350946 - Control 1093812292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Json Data Viewer</source><target>Средство просмотра данных Json</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyLogEntry - Control JsonData - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2206473552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Twikey Registrations</source><target>Регистрация твики</target>
+          <source>Twikey Sales Registrations</source><target>Регистрация продаж Twikey</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyRegistrations - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2812164912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Twikey Registrations</source><target>Регистрация твики</target>
+          <source>Twikey Sales Registrations</source><target>Регистрация продаж Twikey</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyRegistrationsAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2376476057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Service Registrations</source><target>Регистрация в сервисе Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyServiceRegistr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2126850212 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Twikey Service Registrations</source><target>Регистрация в сервисе Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeyServRegistrAPI - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2666609899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Twikey Setup</source><target>Настройка твикея</target>
@@ -662,6 +752,16 @@
           <source>Update Status</source><target>Статус обновления</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SCA.TWI.TwikeySetup - Action UpdateStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3061425335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Posted Sales Invoices to Twikey</source><target>Отправка учтенных счетов на продажу в Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report SCA.TWI.SendSalesInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2488134852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Posted Service Invoices to Twikey</source><target>Отправка учтенных счетов за услуги в Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report SCA.TWI.SendServiceInvoices - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1206817445 - Action 2683919842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Invite Customer via Twikey</source><target>Пригласить клиента через Twikey</target>
@@ -752,6 +852,21 @@
           <source>Twikey Invoice Status</source><target>Состояние счета-фактуры Twikey</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.SalesInvoiceHeader - Field SCA.TWI.TwikeyInvoiceStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2494743339 - Field 4154990448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3610197182">
+          <source>Twikey Alt. Contract Template</source><target>Twikey Alt. Шаблон контракта</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.ServiceHeader - Field SCA.TWI.TwikeyContractTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2138814236 - Field 4154990448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3117283677">
+          <source>Twikey Alt. Contract Template</source><target>Twikey Alt. Шаблон контракта</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.ServiceInvoiceHeader - Field SCA.TWI.TwikeyContractTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2138814236 - Field 145278149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3117283677">
+          <source>Twikey Invoice Status</source><target>Состояние счета-фактуры Twikey</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SCA.TWI.ServiceInvoiceHeader - Field SCA.TWI.TwikeyInvoiceStatus - Property Caption</note>
         </trans-unit>
         <trans-unit id="PermissionSet 4217017434 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Twikey</source><target>Твики</target>

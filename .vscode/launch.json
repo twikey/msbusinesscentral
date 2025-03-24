@@ -12,6 +12,44 @@
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "schemaUpdateMode": "Synchronize"
+        }, 
+        {
+            "name": "XPR365_DEV",
+            "type": "al",
+            "request": "launch",
+            "server": "https://businesscentral.dynamics.com",
+            "tenant": "02fd835f-6ca8-4cff-b600-d495e9328fac",
+            "environmentType": "Sandbox",
+            "environmentName": "XPR365_DEV",
+            "startupObjectId": 9305,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "XPR365_ACCEPT",
+            "type": "al",
+            "request": "launch",
+            "server": "https://businesscentral.dynamics.com",
+            "tenant": "02fd835f-6ca8-4cff-b600-d495e9328fac",
+            "environmentType": "Sandbox",
+            "environmentName": "XPR365_ACCEPT",
+            "startupObjectId": 9305,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "schemaUpdateMode": "Synchronize"
         }
     ]
 }
