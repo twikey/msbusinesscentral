@@ -133,7 +133,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Headers.Add('Authorization', BasicAuthKey);
 
             Content := 'ct=' + format(ContractTemplate.Id);
-            Content += '&l=' + Customer."Language Code";
+            Content += '&l=' + copystr(Customer."Language Code", 1, 2);
             Content += '&email=' + Customer."E-Mail";
             Content += '&companyName=' + Customer.Name;
             Content += '&lastname=' + '-';
@@ -245,7 +245,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Headers.Add('Authorization', BasicAuthKey);
 
         Content := 'ct=' + format(ContractTemplate.Id);
-        Content += '&l=' + Customer."Language Code";
+        Content += '&l=' + copystr(Customer."Language Code", 1, 2);
         Content += '&email=' + Customer."E-Mail";
         Content += '&companyName=' + Customer.Name;
         Content += '&lastname=' + '-';
@@ -751,7 +751,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('amount', format(SalesInvoiceHeader."Amount Including VAT", 0, 9));
         InvoiceObj.Add('date', SalesInvoiceHeader."Posting Date");
         InvoiceObj.Add('duedate', SalesInvoiceHeader."Due Date");
-        InvoiceObj.Add('locale', SalesInvoiceHeader."Language Code");
+        InvoiceObj.Add('locale', copystr(SalesInvoiceHeader."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
         CustObj.Add('email', Customer."E-Mail");
@@ -767,7 +767,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj.Add('zip', Customer."Post Code");
         CustObj.Add('city', Customer.City);
         CustObj.Add('country', Customer."Country/Region Code");
-        CustObj.Add('l', Customer."Language Code");
+        CustObj.Add('l', copystr(Customer."Language Code", 1, 2));
         VatRegistrationNo := GetCustomerVatRegistrationNo(Customer);
         if VatRegistrationNo <> '' then begin
             CustObj.Add('vatno', VatRegistrationNo);
@@ -868,7 +868,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('amount', format(CustLedgerEntry."Amount", 0, 9));
         InvoiceObj.Add('date', CustLedgerEntry."Posting Date");
         InvoiceObj.Add('duedate', CustLedgerEntry."Due Date");
-        InvoiceObj.Add('locale', Customer."Language Code");
+        InvoiceObj.Add('locale', copystr(Customer."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
         CustObj.Add('email', Customer."E-Mail");
@@ -884,7 +884,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj.Add('zip', Customer."Post Code");
         CustObj.Add('city', Customer.City);
         CustObj.Add('country', Customer."Country/Region Code");
-        CustObj.Add('l', Customer."Language Code");
+        CustObj.Add('l', copystr(Customer."Language Code", 1, 2));
         VatRegistrationNo := GetCustomerVatRegistrationNo(Customer);
         if VatRegistrationNo <> '' then begin
             CustObj.Add('vatno', VatRegistrationNo);
@@ -1354,7 +1354,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Content += '&zip=' + Customer."Post Code";
             Content += '&city=' + Customer.City;
             Content += '&country=' + Customer."Country/Region Code";
-            Content += '&l=' + Customer."Language Code";
+            Content += '&l=' + copystr(Customer."Language Code", 1, 2);
 
             VatRegistrationNo := GetCustomerVatRegistrationNo(Customer);
             if VatRegistrationNo <> '' then begin
@@ -1435,7 +1435,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Content += '&zip=' + Customer."Post Code";
             Content += '&city=' + Customer.City;
             Content += '&country=' + Customer."Country/Region Code";
-            Content += '&l=' + Customer."Language Code";
+            Content += '&l=' + copystr(Customer."Language Code", 1, 2);
 
             Url := GetBaseURL();
             Url += 'creditor/customer/' + xCustomer."No." + '?' + Content;
@@ -1588,7 +1588,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('amount', format(ServiceInvoiceHeader."Amount Including VAT", 0, 9));
         InvoiceObj.Add('date', ServiceInvoiceHeader."Posting Date");
         InvoiceObj.Add('duedate', ServiceInvoiceHeader."Due Date");
-        InvoiceObj.Add('locale', ServiceInvoiceHeader."Language Code");
+        InvoiceObj.Add('locale', copystr(ServiceInvoiceHeader."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
         CustObj.Add('email', Customer."E-Mail");
@@ -1604,7 +1604,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj.Add('zip', Customer."Post Code");
         CustObj.Add('city', Customer.City);
         CustObj.Add('country', Customer."Country/Region Code");
-        CustObj.Add('l', Customer."Language Code");
+        CustObj.Add('l', copystr(Customer."Language Code", 1, 2));
         VatRegistrationNo := GetCustomerVatRegistrationNo(Customer);
         if VatRegistrationNo <> '' then begin
             CustObj.Add('vatno', VatRegistrationNo);
