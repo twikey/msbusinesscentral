@@ -36,5 +36,18 @@ permissionset 71016575 "SCA.TWI.Twikey"
         page "SCA.TWI.TwikeyLogEntries" = X,
         page "SCA.TWI.TwikeyLogEntry" = X,
         page "SCA.TWI.TwikeyRegistrations" = X,
-        page "SCA.TWI.TwikeySetup" = X;
+        page "SCA.TWI.TwikeySetup" = X,
+        table "SCA.TWI.CLETwikeyRegistration" = X,
+        tabledata "SCA.TWI.CLETwikeyRegistration" = RMID,
+        table "SCA.TWI.TwikeyServiceRegistr" = X,
+        tabledata "SCA.TWI.TwikeyServiceRegistr" = RMID,
+        codeunit "SCA.TWI.JsonHelper" = X,
+        page "SCA.TWI.CLETwikeyRegAPI" = X,
+        page "SCA.TWI.CLETwikeyRegistrations" = X,
+        page "SCA.TWI.TwikeyDocumentsAPI" = X,
+        page "SCA.TWI.TwikeyRegistrationsAPI" = X,
+        page "SCA.TWI.TwikeyServiceRegistr" = X,
+        page "SCA.TWI.TwikeyServRegistrAPI" = X,
+        report "SCA.TWI.SendSalesInvoices" = X,
+        report "SCA.TWI.SendServiceInvoices" = X;
 }
