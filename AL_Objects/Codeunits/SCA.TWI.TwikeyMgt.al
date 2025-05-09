@@ -814,7 +814,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             end;            
         end;
 
-        if not CcArray.IsEmpty() then
+        if CcArray.Count() > 0 then
             CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
 
         CustObj.Add('companyName', Customer.Name);
@@ -952,7 +952,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             end;
         end;
 
-        if not CcArray.IsEmpty() then
+        if CcArray.Count() > 0 then
             CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
 
         CustObj.Add('companyName', Customer.Name);
@@ -1723,7 +1723,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             end;
         end;
 
-        if not CcArray.IsEmpty() then
+        if CcArray.Count() > 0 then
             CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
 
 
