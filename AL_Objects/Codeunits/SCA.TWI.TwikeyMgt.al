@@ -134,7 +134,17 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
 
             Content := 'ct=' + format(ContractTemplate.Id);
             Content += '&l=' + copystr(Customer."Language Code", 1, 2);
-            Content += '&email=' + Customer."E-Mail";
+
+            // Split email by semicolon and get the first valid one
+            EmailList := Customer."E-Mail".Split(';');
+            foreach Email in EmailList do begin
+                Email := Trim(Email);
+                if Email <> '' then begin
+                    Content += '&email=' + Email;
+                    break;
+                end;
+            end;
+
             Content += '&companyName=' + Customer.Name;
             Content += '&lastname=' + '-';
             if Customer.Contact <> '' then begin
@@ -184,17 +194,20 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Request.Content := HttpContent;
 
             if Client.Send(Request, Response) then begin
-                Response.Content.ReadAs(ResponseContent);
-                if JResponse.ReadFrom(ResponseContent) then begin
-                    if JHelper.GetJsonValue(JResponse, JValue, 'mndtId') then begin
-                        TwikeyDocument.Init();
-                        TwikeyDocument."Customer No." := Customer."No.";
-                        TwikeyDocument."Document Id" := JValue.AsText();
-                        TwikeyDocument.Status := 'Pending';
-                        TwikeyDocument."Contract Template" := ContractTemplate.Id;
-                        TwikeyDocument.Insert();
+                if Response.HttpStatusCode = 401 then begin
+                    BasicAuthKey := '';
+                end else
+                    Response.Content.ReadAs(ResponseContent);
+                    if JResponse.ReadFrom(ResponseContent) then begin
+                        if JHelper.GetJsonValue(JResponse, JValue, 'mndtId') then begin
+                            TwikeyDocument.Init();
+                            TwikeyDocument."Customer No." := Customer."No.";
+                            TwikeyDocument."Document Id" := JValue.AsText();
+                            TwikeyDocument.Status := 'Pending';
+                            TwikeyDocument."Contract Template" := ContractTemplate.Id;
+                            TwikeyDocument.Insert();
+                        end;
                     end;
-                end;
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, Content, Response, '');
             Message(strsubstno(Label10, Customer."E-Mail"));
@@ -246,7 +259,17 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
 
         Content := 'ct=' + format(ContractTemplate.Id);
         Content += '&l=' + copystr(Customer."Language Code", 1, 2);
-        Content += '&email=' + Customer."E-Mail";
+
+        // Split email by semicolon and get the first valid one
+        EmailList := Customer."E-Mail".Split(';');
+        foreach Email in EmailList do begin
+            Email := Trim(Email);
+            if Email <> '' then begin
+                Content += '&email=' + Email;
+                break;
+            end;
+        end;
+
         Content += '&companyName=' + Customer.Name;
         Content += '&lastname=' + '-';
         if Customer.Contact <> '' then begin
@@ -297,17 +320,20 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Request.Content := HttpContent;
 
         if Client.Send(Request, Response) then begin
-            Response.Content.ReadAs(ResponseContent);
-            if JResponse.ReadFrom(ResponseContent) then begin
-                if JHelper.GetJsonValue(JResponse, JValue, 'mndtId') then begin
-                    TwikeyDocument.Init();
-                    TwikeyDocument."Customer No." := Customer."No.";
-                    TwikeyDocument."Document Id" := JValue.AsText();
-                    TwikeyDocument.Status := 'Pending';
-                    TwikeyDocument."Contract Template" := ContractTemplate.Id;
-                    TwikeyDocument.Insert();
+            if Response.HttpStatusCode = 401 then begin
+                BasicAuthKey := '';
+            end else
+                Response.Content.ReadAs(ResponseContent);
+                if JResponse.ReadFrom(ResponseContent) then begin
+                    if JHelper.GetJsonValue(JResponse, JValue, 'mndtId') then begin
+                        TwikeyDocument.Init();
+                        TwikeyDocument."Customer No." := Customer."No.";
+                        TwikeyDocument."Document Id" := JValue.AsText();
+                        TwikeyDocument.Status := 'Pending';
+                        TwikeyDocument."Contract Template" := ContractTemplate.Id;
+                        TwikeyDocument.Insert();
+                    end;
                 end;
-            end;
         end;
         WebRequestMgt.CreateLogEntry(Url, Request.Method, Content, Response, '');
 
@@ -439,9 +465,12 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Request.Content := HttpContent;
 
             if Client.Send(Request, Response) then begin
-                Response.Content.ReadAs(ResponseContent);
-                TwikeyDocument.Status := 'Suspended';
-                TwikeyDocument.Modify();
+                if Response.HttpStatusCode = 401 then begin
+                    BasicAuthKey := '';
+                end else
+                    Response.Content.ReadAs(ResponseContent);
+                    TwikeyDocument.Status := 'Suspended';
+                    TwikeyDocument.Modify();
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, Content, Response, '');
         end else begin
@@ -500,9 +529,12 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Request.Content := HttpContent;
 
             if Client.Send(Request, Response) then begin
-                Response.Content.ReadAs(ResponseContent);
-                TwikeyDocument.Status := 'Signed';
-                TwikeyDocument.Modify();
+                if Response.HttpStatusCode = 401 then begin
+                    BasicAuthKey := '';
+                end else
+                    Response.Content.ReadAs(ResponseContent);
+                    TwikeyDocument.Status := 'Signed';
+                    TwikeyDocument.Modify();
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, Content, Response, '');
         end else begin
@@ -549,6 +581,11 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
                 Headers.Add('Authorization', BasicAuthKey);
 
                 if Client.Send(Request, Response) then begin
+
+                    if Response.HttpStatusCode = 401 then begin
+                        BasicAuthKey := '';
+                    end
+
                     if Response.HttpStatusCode = 200 then begin
                         TwikeyDocument.Status := 'Cancelled';
                         TwikeyDocument.Modify();
@@ -734,6 +771,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj: JsonObject;
         Customer: Record Customer;
         VatRegistrationNo: Text;
+        CcArray: JsonArray;
     begin
         if not Customer.Get(SalesInvoiceHeader."Bill-to Customer No.") then
             Customer.Init();
@@ -754,7 +792,26 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('locale', copystr(SalesInvoiceHeader."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
-        CustObj.Add('email', Customer."E-Mail");
+
+        // Split emails by semicolon
+        EmailList := Customer."E-Mail".Split(';');
+        IsFirst := true;
+
+        foreach Email in EmailList do begin
+            Email := Trim(Email);
+            if Email = '' then
+                continue;
+
+            if IsFirst then begin
+                CustObj.Add('email', Email);
+                IsFirst := false;
+            end else
+                CcArray.Add(Email);
+        end;
+
+        if not CcArray.IsEmpty() then
+            CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
+
         CustObj.Add('companyName', Customer.Name);
         if Customer.Contact <> '' then begin
             CustObj.Add('firstname', Customer.Contact);
@@ -772,7 +829,6 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         if VatRegistrationNo <> '' then begin
             CustObj.Add('vatno', VatRegistrationNo);
         end;
-
 
         InvoiceObj.Add('customer', CustObj.AsToken());
 
@@ -871,7 +927,26 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('locale', copystr(Customer."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
-        CustObj.Add('email', Customer."E-Mail");
+
+        // Split emails by semicolon
+        EmailList := Customer."E-Mail".Split(';');
+        IsFirst := true;
+
+        foreach Email in EmailList do begin
+            Email := Trim(Email);
+            if Email = '' then
+                continue;
+
+            if IsFirst then begin
+                CustObj.Add('email', Email);
+                IsFirst := false;
+            end else
+                CcArray.Add(Email);
+        end;
+
+        if not CcArray.IsEmpty() then
+            CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
+
         CustObj.Add('companyName', Customer.Name);
         if Customer.Contact <> '' then begin
             CustObj.Add('firstname', Customer.Contact);
@@ -1341,7 +1416,17 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             end;
 
             Content := 'customerNumber=' + Customer."No.";
-            Content += '&email=' + Customer."E-Mail";
+
+            // Split email by semicolon and get the first valid one
+            EmailList := Customer."E-Mail".Split(';');
+            foreach Email in EmailList do begin
+                Email := Trim(Email);
+                if Email <> '' then begin
+                    Content += '&email=' + Email;
+                    break;
+                end;
+            end;
+
             Content += '&companyName=' + Customer.Name;
             Content += '&lastname=' + '-';
             if Customer.Contact <> '' then begin
@@ -1389,7 +1474,10 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Request.Content := HttpContent;
 
             if Client.Send(Request, Response) then begin
-                Response.Content.ReadAs(ResponseContent);
+                if Response.HttpStatusCode = 401 then begin
+                    BasicAuthKey := '';
+                end else
+                    Response.Content.ReadAs(ResponseContent);
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, '', Response, '');
 
@@ -1423,7 +1511,17 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
     begin
         if IsTwikeyEnabled() then begin
             Content := 'customerNumber=' + Customer."No.";
-            Content += '&email=' + Customer."E-Mail";
+
+            // Split email by semicolon and get the first valid one
+            EmailList := Customer."E-Mail".Split(';');
+            foreach Email in EmailList do begin
+                Email := Trim(Email);
+                if Email <> '' then begin
+                    Content += '&email=' + Email;
+                    break;
+                end;
+            end;
+
             Content += '&lastname=' + '-';
             if Customer.Contact <> '' then begin
                 Content += '&firstname=' + Customer.Contact;
@@ -1465,7 +1563,10 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             Request.Content := HttpContent;
 
             if Client.Send(Request, Response) then begin
-                Response.Content.ReadAs(ResponseContent);
+                if Response.HttpStatusCode = 401 then begin
+                    BasicAuthKey := '';
+                end else
+                    Response.Content.ReadAs(ResponseContent);
             end;
             WebRequestMgt.CreateLogEntry(Url, Request.Method, '', Response, '');
         end;
@@ -1571,6 +1672,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj: JsonObject;
         Customer: Record Customer;
         VatRegistrationNo: Text;
+        CcArray: JsonArray;
     begin
         if not Customer.Get(ServiceInvoiceHeader."Bill-to Customer No.") then
             Customer.Init();
@@ -1591,7 +1693,27 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         InvoiceObj.Add('locale', copystr(ServiceInvoiceHeader."Language Code", 1, 2));
 
         CustObj.Add('customerNumber', Customer."No.");
-        CustObj.Add('email', Customer."E-Mail");
+
+        // Split emails by semicolon
+        EmailList := Customer."E-Mail".Split(';');
+        IsFirst := true;
+
+        foreach Email in EmailList do begin
+            Email := Trim(Email);
+            if Email = '' then
+                continue;
+
+            if IsFirst then begin
+                CustObj.Add('email', Email);
+                IsFirst := false;
+            end else
+                CcArray.Add(Email);
+        end;
+
+        if not CcArray.IsEmpty() then
+            CustObj.Add('cc', CcArray); // Add cc field only if there are extra emails
+
+
         CustObj.Add('companyName', Customer.Name);
         if Customer.Contact <> '' then begin
             CustObj.Add('firstname', Customer.Contact);
