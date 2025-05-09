@@ -94,6 +94,8 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Label20: Label 'Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3';
         VatRegistrationNo: Text;
         ResponseContent: Text;
+        Email: Text;
+        EmailList: List of [Text];
 
     begin
         // CustObj.Add('ct', '3290');
@@ -138,7 +140,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             // Split email by semicolon and get the first valid one
             EmailList := Customer."E-Mail".Split(';');
             foreach Email in EmailList do begin
-                Email := Trim(Email);
+                Email := Email.Trim();
                 if Email <> '' then begin
                     Content += '&email=' + Email;
                     break;
@@ -239,7 +241,8 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Label2: Label 'Field Name %1 has not been set for Customer No. %2 and Contract Template Id %3';
         VatRegistrationNo: Text;
         ResponseContent: Text;
-
+        Email: Text;
+        EmailList: List of [Text];
     begin
         Customer.TestField("E-Mail");
 
@@ -263,7 +266,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         // Split email by semicolon and get the first valid one
         EmailList := Customer."E-Mail".Split(';');
         foreach Email in EmailList do begin
-            Email := Trim(Email);
+            Email := Email.Trim();
             if Email <> '' then begin
                 Content += '&email=' + Email;
                 break;
@@ -584,7 +587,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
 
                     if Response.HttpStatusCode = 401 then begin
                         BasicAuthKey := '';
-                    end
+                    end;
 
                     if Response.HttpStatusCode = 200 then begin
                         TwikeyDocument.Status := 'Cancelled';
@@ -772,6 +775,9 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Customer: Record Customer;
         VatRegistrationNo: Text;
         CcArray: JsonArray;
+        IsFirst: Boolean;
+        Email: Text;
+        EmailList: List of [Text];
     begin
         if not Customer.Get(SalesInvoiceHeader."Bill-to Customer No.") then
             Customer.Init();
@@ -798,15 +804,14 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         IsFirst := true;
 
         foreach Email in EmailList do begin
-            Email := Trim(Email);
-            if Email = '' then
-                continue;
-
-            if IsFirst then begin
-                CustObj.Add('email', Email);
-                IsFirst := false;
-            end else
-                CcArray.Add(Email);
+            Email := Email.Trim();
+            if Email <> '' then
+                if IsFirst then begin
+                    CustObj.Add('email', Email);
+                    IsFirst := false;
+                end else
+                    CcArray.Add(Email);
+            end;            
         end;
 
         if not CcArray.IsEmpty() then
@@ -907,6 +912,10 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         CustObj: JsonObject;
         Customer: Record Customer;
         VatRegistrationNo: Text;
+        IsFirst: Boolean;
+        Email: Text;
+        EmailList: List of [Text];
+        CcArray: JsonArray;
     begin
         if not Customer.Get(CustLedgerEntry."Customer No.") then
             Customer.Init();
@@ -933,15 +942,14 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         IsFirst := true;
 
         foreach Email in EmailList do begin
-            Email := Trim(Email);
-            if Email = '' then
-                continue;
-
-            if IsFirst then begin
-                CustObj.Add('email', Email);
-                IsFirst := false;
-            end else
-                CcArray.Add(Email);
+            Email := Email.Trim();
+            if Email <> '' then
+                if IsFirst then begin
+                    CustObj.Add('email', Email);
+                    IsFirst := false;
+                end else
+                    CcArray.Add(Email);
+            end;
         end;
 
         if not CcArray.IsEmpty() then
@@ -1408,7 +1416,9 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Url: Text;
         VatRegistrationNo: Text;
         ResponseContent: Text;
-
+        IsFirst: Boolean;
+        Email: Text;
+        EmailList: List of [Text];
     begin
         if IsTwikeyEnabled() then begin
             if GuiAllowed then begin
@@ -1420,7 +1430,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             // Split email by semicolon and get the first valid one
             EmailList := Customer."E-Mail".Split(';');
             foreach Email in EmailList do begin
-                Email := Trim(Email);
+                Email := Email.Trim();
                 if Email <> '' then begin
                     Content += '&email=' + Email;
                     break;
@@ -1507,7 +1517,8 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Url: Text;
         VatRegistrationNo: Text;
         ResponseContent: Text;
-
+        Email: Text;
+        EmailList: List of [Text];
     begin
         if IsTwikeyEnabled() then begin
             Content := 'customerNumber=' + Customer."No.";
@@ -1515,7 +1526,7 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
             // Split email by semicolon and get the first valid one
             EmailList := Customer."E-Mail".Split(';');
             foreach Email in EmailList do begin
-                Email := Trim(Email);
+                Email := Email.Trim();
                 if Email <> '' then begin
                     Content += '&email=' + Email;
                     break;
@@ -1673,6 +1684,9 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         Customer: Record Customer;
         VatRegistrationNo: Text;
         CcArray: JsonArray;
+        IsFirst: Boolean;
+        Email: Text;
+        EmailList: List of [Text];
     begin
         if not Customer.Get(ServiceInvoiceHeader."Bill-to Customer No.") then
             Customer.Init();
@@ -1699,15 +1713,14 @@ codeunit 71016575 "SCA.TWI.TwikeyMgt"
         IsFirst := true;
 
         foreach Email in EmailList do begin
-            Email := Trim(Email);
-            if Email = '' then
-                continue;
-
-            if IsFirst then begin
-                CustObj.Add('email', Email);
-                IsFirst := false;
-            end else
-                CcArray.Add(Email);
+            Email := Email.Trim();
+            if Email <> '' then
+                if IsFirst then begin
+                    CustObj.Add('email', Email);
+                    IsFirst := false;
+                end else
+                    CcArray.Add(Email);
+            end;
         end;
 
         if not CcArray.IsEmpty() then
